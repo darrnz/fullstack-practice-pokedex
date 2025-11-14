@@ -1,0 +1,30 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+    id    Int    @id @default(autoincrement())
+    name  String
+    email String @unique
+    // decks Deck[]
+}
+
+// TODO: definir modelos del proyecto:
+// Sugeridos:
+// model User { ... }
+// model Deck { ... }
+// model DeckPokemon { ... }
+// model FavoritePokemon { ... }
+// model PokemonCache { ... }
+
+// EJEMPLO de modelo simple (pueden borrar o adaptar):
+// model DemoItem {
+//   id        Int      @id @default(autoincrement())
+//   title     String
+//   createdAt DateTime @default(now())
+// }
