@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Ruta de prueba (healthcheck)
 app.use('/api/health', healthRoutes);
+app.use('/api/user', require('./routes/user.routes'));
 
 // TODO: aquí agregarán más rutas:
 // const usersRoutes = require('./routes/users.routes');

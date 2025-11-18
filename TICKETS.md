@@ -1,4 +1,4 @@
-# 📋 PokéDeck UDI — TICKETS / Project Tasks
+# 📋 PokéDeck — TICKETS / Project Tasks
 
 Este archivo contiene los tickets sugeridos organizados por bloques. Cada ticket está listo para copiar/pegar como Issue en GitHub. Mantén el estilo didáctico: descripción, tareas, pistas y criterio de finalización. No incluyas soluciones completas.
 
@@ -194,8 +194,6 @@ Investigar endpoints de PokéAPI y decidir estrategia: proxy/caché en backend o
 - [ ] Recomendar campos a cachear (ver `DATABASE.md`).
 
 **Labels**: integration, pokeapi
-
-
 ### INTEG-01 – Endpoint para añadir/remover Pokémon en un deck (validar límite 6)
 
 **Descripción**

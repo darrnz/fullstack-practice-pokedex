@@ -1,4 +1,4 @@
-# PokéDeck UDI — Configuración del Proyecto
+# PokéDeck — Configuración del Proyecto
 
 ## Archivos de configuración incluidos
 

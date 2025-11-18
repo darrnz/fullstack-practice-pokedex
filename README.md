@@ -1,6 +1,6 @@
-# 🐉 PokéDeck UDI
+# 🐉 PokéDeck
 
-PokéDeck UDI es un proyecto educativo FULLSTACK para equipos pequeños (4 alumnos). Construirás una aplicación donde cada usuario puede crear mazos (hasta 6 Pokémon), buscar pokémon, ver detalles y marcar favoritos. El objetivo es aprender el flujo Frontend ↔ Backend ↔ Base de datos e integrar la PokéAPI.
+PokéDeck es un proyecto educativo FULLSTACK para equipos pequeños (4 alumnos). Construirás una aplicación donde cada usuario puede crear mazos (hasta 6 Pokémon), buscar pokémon, ver detalles y marcar favoritos. El objetivo es aprender el flujo Frontend ↔ Backend ↔ Base de datos e integrar la PokéAPI.
 
 ## 🧰 Stack
 
@@ -63,10 +63,10 @@ Las tareas detalladas están en `TICKETS.md`. Usa ese archivo para crear Issues 
 
 ¡A programar! 🚀
 
-# 🐉 PokéDeck UDI
+# 🐉 PokéDeck
 
 Descripción breve  
-PokéDeck UDI es un mini proyecto FULLSTACK pensado para 4 alumnos trabajando en equipo. La idea es construir una pequeña aplicación donde hay usuarios (sin autenticación compleja), cada usuario puede tener mazos (decks) de hasta 6 Pokémon, se pueden buscar Pokémon por nombre o tipo, ver detalle de cada Pokémon y marcar favoritos. No buscamos un producto perfecto: el objetivo es que entiendas el flujo Frontend ↔ Backend ↔ Base de datos, cómo consumir una API externa (PokéAPI) y cómo organizar el trabajo en tickets.
+PokéDeck es un mini proyecto FULLSTACK. La idea es construir una pequeña aplicación donde hay usuarios (sin autenticación compleja), cada usuario puede tener mazos (decks) de hasta 6 Pokémon, se pueden buscar Pokémon por nombre o tipo, ver detalle de cada Pokémon y marcar favoritos. No buscamos un producto perfecto: el objetivo es que entiendas el flujo Frontend ↔ Backend ↔ Base de datos, cómo consumir una API externa (PokéAPI) y cómo organizar el trabajo en tickets.
 
 Stack principal
 

@@ -8,16 +8,26 @@ datasource db {
 }
 
 model User {
-    id    Int    @id @default(autoincrement())
+    id    Int      @id @default(autoincrement())
     name  String
-    email String @unique
+    email String   @unique
+    tel   String?
+    deck  Deck[]
+
     // decks Deck[]
 }
 
 // TODO: definir modelos del proyecto:
 // Sugeridos:
 // model User { ... }
-// model Deck { ... }
+model Deck {
+    id        Int      @id @default(autoincrement())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    userId    User  @relation(fields: [id], references: [id])
+    pokemons  String
+ }
 // model DeckPokemon { ... }
 // model FavoritePokemon { ... }
 // model PokemonCache { ... }

@@ -1,5 +1,5 @@
 // main.js
-console.log('PokéDeck UDI - Boilerplate listo.');
+console.log('PokéDeck - Boilerplate listo.');
 
 // TODO: aquí podrían:
 // - Probar llamada a /api/health
