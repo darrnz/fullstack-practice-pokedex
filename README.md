@@ -19,7 +19,7 @@ Aprender a diseñar la UI, exponer rutas REST en el servidor, modelar datos en l
 
 ```bash
 git clone <repo-url>
-cd fullstack-practice-pokedex/pokedeck-udi
+cd fullstack-practice-pokedex
 ```
 
 2. Copia `.env.example` → `.env` y completa `DATABASE_URL`.
@@ -36,14 +36,14 @@ npm run dev
 - `http://localhost:3000`
 - `http://localhost:3000/api/health`
 
-Para instrucciones detalladas (ejemplos de `DATABASE_URL`, comandos de Prisma, solución de errores frecuentes), consulta los documentos en [pokedeck-udi/docs/](pokedeck-udi/docs/).
+Para instrucciones detalladas (ejemplos de `DATABASE_URL`, comandos de Prisma, solución de errores frecuentes), consulta los documentos en [docs/](docs/).
 
 ## 🗂 Estructura breve
 
-- `pokedeck-udi/public/` — páginas HTML, CSS y JS del frontend.
-- `pokedeck-udi/src/` — servidor Express y rutas.
-- `pokedeck-udi/prisma/` — `schema.prisma` y migraciones.
-- `pokedeck-udi/docs/` — guías detalladas por capa.
+ - `public/` — páginas HTML, CSS y JS del frontend.
+ - `src/` — servidor Express y rutas.
+ - `prisma/` — `schema.prisma` y migraciones.
+ - `docs/` — guías detalladas por capa.
 
 ## 📋 Tareas / Tickets
 
@@ -51,9 +51,9 @@ Las tareas detalladas están en `TICKETS.md`. Usa ese archivo para crear Issues 
 
 ## 📚 Enlaces rápidos
 
-- [`pokedeck-udi/docs/BACKEND.md`](pokedeck-udi/docs/BACKEND.md)
-- [`pokedeck-udi/docs/DATABASE.md`](pokedeck-udi/docs/DATABASE.md)
-- [`pokedeck-udi/docs/FRONTEND.md`](pokedeck-udi/docs/FRONTEND.md)
+ - [`docs/BACKEND.md`](docs/BACKEND.md)
+ - [`docs/DATABASE.md`](docs/DATABASE.md)
+ - [`docs/FRONTEND.md`](docs/FRONTEND.md)
 - [`TICKETS.md`](TICKETS.md)
 
 ## ¿Qué hacer ahora?
@@ -140,8 +140,8 @@ Explicación rápida:
 
 ### Instalar dependencias
 
-- Abre una terminal en la carpeta `pokedeck-udi` (la raíz del proyecto).
-- Comprueba que tu prompt muestre algo como `.../pokedeck-udi $`.
+- Abre una terminal en la carpeta del proyecto (la raíz del repositorio).
+- Comprueba que tu prompt muestre algo como `.../fullstack-practice-pokedex $`.
 - Ejecuta:
 
 ```bash

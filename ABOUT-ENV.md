@@ -52,7 +52,7 @@ Sigue estos pasos sencillos:
 
 ### 3. Instalar dependencias (solo la primera vez)
 
-Abre una terminal en la carpeta del proyecto (por ejemplo, `.../pokedeck-udi $`) y ejecuta:
+Abre una terminal en la carpeta del proyecto (por ejemplo, `.../fullstack-practice-pokedex $`) y ejecuta:
 
 ```bash
 npm install
