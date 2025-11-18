@@ -1,0 +1,75 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "PokéDeck API",
+    "version": "0.1.0",
+    "description": "A minimal OpenAPI spec for testing the PokéDeck backend via Swagger UI."
+  },
+  "servers": [
+    {
+      "url": "https://fuzzy-orbit-69764x6p77ww2r6pr-3000.app.github.dev",
+      "description": "Local dev server (default)"
+    }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" }
+                  }
+                },
+                "example": { "status": "ok" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user": {
+      "post": {
+        "summary": "Create or login user (example)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "email": { "type": "string" }
+                },
+                "required": ["name", "email"]
+              },
+              "example": { "name": "Ash Ketchum", "email": "ash@example.com" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User created or found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "integer" },
+                    "name": { "type": "string" },
+                    "email": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
