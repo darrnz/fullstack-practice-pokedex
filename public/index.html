@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PokéDeck</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDeck - Inicio</title>
+
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">PokéDeck</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- TODO: agregar links a páginas que ellos creen: users.html, pokemon.html, decks.html -->
-          <!-- <li class="nav-item"><a class="nav-link" href="users.html">Usuarios</a></li> -->
-        </ul>
-      </div>
+<body>
+
+    <div class="container">
+        <h1>PokéDeck</h1>
+        <p>Bienvenido. Crea tu equipo Pokémon de 6.</p>
+
+        <input type="text" id="username" placeholder="Tu usuario...">
+
+        <div class="botones">
+            <button onclick="entrar()">Entrar</button>
+            <button onclick="crearUsuario()">Crear usuario</button>
+        </div>
     </div>
-  </nav>
 
-  <main class="container py-4">
-    <section class="mb-4">
-      <h1 class="h3">PokéDeck/h1>
-      <p class="text-muted">
-        Proyecto fullstack: usuarios, mazos de 6 Pokémon, favoritos y búsqueda por nombre/tipo.
-      </p>
-      <p class="small text-muted">
-        TODO (equipo): crear las páginas de Usuarios, Pokémon y Mazos, y conectarlas con el backend.
-      </p>
-    </section>
+    <script>
+        function entrar() {
+            const usuario = document.getElementById("username").value.trim();
 
-    <section class="row g-3">
-      <!-- TODO: tarjetas o botones que lleven a las páginas principales del proyecto -->
-    </section>
-  </main>
+            if (usuario === "") {
+                alert("Escribe un usuario para continuar");
+                return;
+            }
 
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            // Redirige a decks.html
+            window.location.href = "decks.html";
+        }
+
+        function crearUsuario() {
+            // Redirige a users.html
+            window.location.href = "users.html";
+
+              }
+    </script>
+
 </body>
 </html>
+
+
+

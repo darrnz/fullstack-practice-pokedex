@@ -18,6 +18,10 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 // Ruta de prueba (healthcheck)
 app.use('/api/health', healthRoutes);
 app.use('/api/user', require('./routes/user.routes'));
+// Swagger UI
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require(path.join(__dirname, '..', 'docs', 'openapi.json'));
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // TODO: aquí agregarán más rutas:
 // const usersRoutes = require('./routes/users.routes');
