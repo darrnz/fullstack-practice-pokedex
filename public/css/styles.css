@@ -1,7 +1,39 @@
-/* styles.css - estilos mínimos, el resto lo hacen ellos */
-
-/* TODO: colores personalizados, ajustes de márgenes, etc. */
-
 body {
-  /* Por ahora, usar Bootstrap. Aquí pueden hacer ajustes finos. */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFCC00, #FF4444);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.3);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input {
+    border: 2px solid #E60013;
+}
+
+button {
+    background: #E60013;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+

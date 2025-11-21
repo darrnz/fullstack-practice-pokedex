@@ -4,59 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéDeck - Inicio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #FFCC00, #FF4444);
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .container {
-            width: 320px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0px 4px 18px rgba(0,0,0,0.3);
-        }
-
-        h1 {
-            color: #E60013;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            margin-top: 15px;
-            padding: 10px;
-            border: 2px solid #E60013;
-            border-radius: 8px;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            background: #E60013;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <div class="container">
         <h1>PokéDeck</h1>
         <p>Bienvenido. Crea tu equipo Pokémon de 6.</p>
-        <input type="text" placeholder="Tu usuario...">
-        <button>Entrar</button>
+
+        <input type="text" id="username" placeholder="Tu usuario...">
+
+        <div class="botones">
+            <button onclick="entrar()">Entrar</button>
+            <button onclick="crearUsuario()">Crear usuario</button>
+        </div>
     </div>
+
+    <script>
+        function entrar() {
+            const usuario = document.getElementById("username").value.trim();
+
+            if (usuario === "") {
+                alert("Escribe un usuario para continuar");
+                return;
+            }
+
+            // Redirige a decks.html
+            window.location.href = "decks.html";
+        }
+
+        function crearUsuario() {
+            // Redirige a users.html
+            window.location.href = "users.html";
+
+              }
+    </script>
 
 </body>
 </html>
+
+
+
